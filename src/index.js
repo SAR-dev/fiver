@@ -4,6 +4,7 @@ import App from './App';
 import { ColorModeScript, ChakraProvider } from '@chakra-ui/react';
 import { light } from './theme';
 import './styles.css';
+import './chatscope.css';
 import './braft.css';
 
 ReactDOM.render(

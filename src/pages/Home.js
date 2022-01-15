@@ -22,12 +22,12 @@ function Home() {
             w="350px"
             h="320px"
             rounded="md"
-            bg="gray.100"
+            className='moon-bg'
             borderColor="gray.200"
             borderWidth="1px"
             alignItems="center"
             textAlign="center"
-            color="gray.600"
+            color="white"
             flexShrink="0"
             p={10}
           >
@@ -39,7 +39,6 @@ function Home() {
                 Get offers from sellers for your project
               </Text>
               <Button
-                variant="outline"
                 colorScheme="teal"
                 fontSize="md"
                 w="100%"

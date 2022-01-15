@@ -16,6 +16,7 @@ import {
 import { FiSearch } from 'react-icons/fi';
 import { Link as ChakraLink } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const NavLayout = ({ children }) => {
   return (
@@ -47,15 +48,8 @@ const NavLayout = ({ children }) => {
         <Flex ml="auto" alignItems="center">
           <HStack spacing={7}>
             <ChakraLink
-              color="gray.600"
-              fontWeight="semibold"
-              _hover={{ color: 'teal.500' }}
-              _focus={{ color: 'teal.600' }}
-              _active={{ color: 'teal.600' }}
-            >
-              Explore
-            </ChakraLink>
-            <ChakraLink
+              as={Link}
+              to="/messages"
               color="gray.600"
               fontWeight="semibold"
               _hover={{ color: 'teal.500' }}
@@ -107,6 +101,7 @@ const NavLayout = ({ children }) => {
       <Box w="100%" maxW="1600px" p={10} mx="auto">
         {children}
       </Box>
+      <Footer />
     </Box>
   );
 };

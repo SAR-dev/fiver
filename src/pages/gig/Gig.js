@@ -20,7 +20,7 @@ import {
   ListIcon,
 } from '@chakra-ui/react';
 import NavLayout from '../../layouts/NavLayout';
-import { FaSlideshare, FaStar, FaShare } from 'react-icons/fa';
+import { FaSlideshare, FaStar, FaShare, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import { MdCheckCircle, MdDateRange } from 'react-icons/md';
 import { AiOutlineFieldTime } from 'react-icons/ai';
 import { BiReset } from 'react-icons/bi';
@@ -51,14 +51,32 @@ const Gig = () => {
               to connect with new customers and get more orders.
             </Text>
           </SimpleGrid>
+          <Flex ml="auto">
           <Button
-            ml="auto"
-            colorScheme="teal"
-            size="sm"
-            leftIcon={<Icon as={FaShare} />}
-          >
-            Share Your Gig
-          </Button>
+              colorScheme="whatsapp"
+              size="sm"
+              leftIcon={<Icon as={FaWhatsapp} />}
+              ml={2}
+            >
+              WhatsApp
+            </Button>
+            <Button
+              colorScheme="facebook"
+              size="sm"
+              leftIcon={<Icon as={FaFacebook} />}
+              ml={2}
+            >
+              Facebook
+            </Button>
+            <Button
+              colorScheme="teal"
+              size="sm"
+              leftIcon={<Icon as={FaShare} />}
+              ml={2}
+            >
+              Copy Link
+            </Button>
+          </Flex>
         </Flex>
         <Grid templateColumns="repeat(16, 1fr)" gap={16}>
           <GridItem colSpan={10}>

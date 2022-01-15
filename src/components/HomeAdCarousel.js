@@ -37,6 +37,7 @@ function HomeAdCarousel() {
       image: 'https://i.imgur.com/3KOaJWM.png',
     },
   ];
+  
   const [activeItemIndex, setActiveItemIndex] = useState(0);
 
   return (
